@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ==================== HEADER SECTION ==================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:gravity="center_vertical">
+
+            <!-- Animated Icon using bg_pulse_animation drawable -->
+            <ImageView
+                android:id="@+id/ivAnimatedIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_pulse_animation"
+                android:contentDescription="Animated REXO AI logo"/>
+
+            <!-- App Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REXO AI"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI-Powered Development Suite"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- ==================== CENTER HERO SECTION ==================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <!-- Large Pulsing Circle using bg_large_pulse_circle drawable -->
+            <ImageView
+                android:id="@+id/ivLargeAnimation"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/bg_large_pulse_circle"
+                android:contentDescription="Large pulsing animation circle"/>
+
+            <!-- Main Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Your AI Assistant"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"/>
+
+            <!-- Subheading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select an AI tool to get started"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- ==================== AI CARDS CONTAINER ==================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- ===== JACK AI CARD ===== -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardJackAI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/card_bg"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Jack AI Icon using bg_gradient_purple drawable -->
+                    <View
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_gradient_purple"
+                        android:contentDescription="Jack AI icon"/>
+
+                    <!-- Jack AI Content -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jack AI"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Voice-controlled assistant • Opens apps, camera, websites • GNDEC college FAQs"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"/>
+
+                        <!-- Jack AI Tags -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="12dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Voice Control"
+                                android:textColor="@color/cyan"
+                                android:textSize="12sp"
+                                android:background="@drawable/bg_tag_teal"
+                                android:padding="6dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="GNDEC FAQ"
+                                android:textColor="@color/cyan"
+                                android:textSize="12sp"
+                                android:background="@drawable/bg_tag_teal"
+                                android:padding="6dp"
+                                android:layout_marginStart="8dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Arrow Icon -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/gray"
+                        android:textSize="32sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===== JARVIS AI CARD ===== -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardJarvisAI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/card_bg"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Jarvis AI Icon using bg_gradient_blue drawable -->
+                    <View
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_gradient_blue"
+                        android:contentDescription="Jarvis AI icon"/>
+
+                    <!-- Jarvis AI Content -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jarvis AI"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Smart search engine • Instant calculations • Time, weather, jokes, news"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"/>
+
+                        <!-- Jarvis AI Tags -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="12dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Web Search"
+                                android:textColor="#60A5FA"
+                                android:textSize="12sp"
+                                android:background="@drawable/bg_tag_blue"
+                                android:padding="6dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Calculator"
+                                android:textColor="#60A5FA"
+                                android:textSize="12sp"
+                                android:background="@drawable/bg_tag_blue"
+                                android:padding="6dp"
+                                android:layout_marginStart="8dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Arrow Icon -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/gray"
+                        android:textSize="32sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ===== SQL GUARD CARD ===== -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSQLDetection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/card_bg"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:gravity="center_vertical">
+
+                    <!-- SQL Guard Icon using bg_gradient_teal drawable -->
+                    <View
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_gradient_teal"
+                        android:contentDescription="SQL Guard icon"/>
+
+                    <!-- SQL Guard Content -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SQL Guard"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SQL injection detector • Scans queries and CSV files"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"/>
+
+                        <!-- SQL Guard Tags -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="12dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Scan Queries"
+                                android:textColor="@color/cyan"
+                                android:textSize="12sp"
+                                android:background="@drawable/bg_tag_teal"
+                                android:padding="6dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Threat Detection"
+                                android:textColor="@color/cyan"
+                                android:textSize="12sp"
+                                android:background="@drawable/bg_tag_teal"
+                                android:padding="6dp"
+                                android:layout_marginStart="8dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Arrow Icon -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/gray"
+                        android:textSize="32sp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <!-- ==================== APP STRUCTURE GUIDE SECTION ==================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp"
+            android:layout_margin="20dp">
+
+            <!-- Section Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📱 How REXO AI Works"
+                android:textColor="@color/cyan"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REXO AI is a mobile-first AI assistant suite that runs entirely on your Android device. All actions are executed locally on your phone for privacy and speed."
+                android:textColor="@color/light_gray"
+                android:textSize="13sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Architecture Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔄 System Architecture"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Architecture Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/bg_icon_cyan"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Voice Input → Jack/Jarvis processes → Action on your phone"
+                    android:textColor="@color/light_gray"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"/>
+            </LinearLayout>
+
+            <!-- Architecture Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="#3B82F6"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Backend APIs (Flask) run on local server (192.168.43.90)"
+                    android:textColor="@color/light_gray"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"/>
+            </LinearLayout>
+
+            <!-- Architecture Item 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="#10B981"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All device actions (camera, browser, apps) executed locally"
+                    android:textColor="@color/light_gray"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"/>
+            </LinearLayout>
+
+            <!-- Features Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨ Key Features"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Features Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Jack AI: Voice commands, camera control, web navigation, college FAQs\n• Jarvis AI: Calculator, weather, news, search, system stats\n• SQL Guard: Vulnerability scanning for SQL injection attacks\n• Text-to-Speech for all responses\n• Works offline for basic functions"
+                android:textColor="@color/light_gray"
+                android:textSize="13sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Development Status Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🚀 Development Status"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Status Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/bg_icon_cyan"/>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="#10B981"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HomePage (Current screen) ✅"
+                    android:textColor="@color/light_gray"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"/>
+            </LinearLayout>
+
+            <!-- Status Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/bg_icon_cyan"/>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="#10B981"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jarvis AI (Fully functional) ✅"
+                    android:textColor="@color/light_gray"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"/>
+            </LinearLayout>
+
+            <!-- Status Item 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/bg_icon_cyan"/>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="#10B981"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jack AI (Mobile-optimized) ✅"
+                    android:textColor="@color/light_gray"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"/>
+            </LinearLayout>
+
+            <!-- Status Item 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/bg_icon_cyan"/>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="#10B981"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SQL Guard (Security tool) ✅"
+                    android:textColor="@color/light_gray"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Bottom Spacing -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

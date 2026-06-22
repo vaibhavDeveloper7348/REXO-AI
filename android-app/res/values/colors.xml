@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="dark_bg">#0A0E1A</color>
+    <color name="card_bg">#1A1F2E</color>
+    <color name="purple">#A855F7</color>
+    <color name="cyan">#06D6A0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#8B92A8</color>
+    <color name="light_gray">#B8BFCC</color>
+    <color name="blue">#4A90FF</color>
+    <color name="dark_gray">#2A2A2A</color>
+    <color name="background_dark">#121212</color>
+</resources>
