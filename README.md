@@ -40,7 +40,7 @@ What is the hostel fee?
 
 Who is the training and placement officer?
 
-What is the time table of it department
+What is the time table of it department?
 ```
 
 ---
