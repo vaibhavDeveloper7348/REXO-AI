@@ -38,9 +38,9 @@ Jack AI is a college information assistant developed to answer GNDEC-related que
 ```text
 What is the hostel fee?
 
-What courses are offered?
+Who is the training and placement officer?
 
-Where is the library located?
+What is the time table of it department
 ```
 
 ---
